@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Réalité Augmentée avec AR.js</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+      <!-- Placez vos éléments ici -->
+	  
+	  <!-- Définir un marker pour chaque image de déclenchement -->
+      
+
+	  
+	      <!-- Utiliser le preset "hiro" pour tester -->
+		<a-marker preset="hiro">
+			<a-image src="https://cdn.vox-cdn.com/thumbor/VlPF8UuUKoUHFtiebdDsQpW1zYs=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/9632107/mario.jpg" width="1" height="1" position="0 0.5 0"></a-image>
+			
+		</a-marker> 
+
+      <!-- Optionnel : ajoutez une caméra -->
+      <a-entity camera></a-entity>
+	  
+	  
+    </a-scene>
+	
+
+  </body>
+</html>
